@@ -1,5 +1,5 @@
 /* ====================================================
-        FRONTEND MENTOR - WORKLIT LANDING PAGE
+        FRONTEND MENTOR - WORKIT LANDING PAGE
         AUTHOR: ARATI D'SA
 ======================================================== */
 
@@ -18,4 +18,72 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+/* ===================================================
+            CUSTOM PROPERTIES
+======================================================= */
+:root{
+        /* COLORS */
+    --color-slate-900:#24053E;
+    --color-green: #44FFA1;
+    --color-white: #FFF;
+    --color-slate-100: #FCF8FF;
+
+    /* FONT FAMILY */
+    --font-family-fraunces: "Fraunces", serif;
+    --font-family-manrope: "Manrope", sans-serif;
+
+    /* FONT SIZE */
+    --font-size-16: 1rem;
+    --foont-size-18: 1.13rem;
+
+    /* FONT WEIGHT */
+    --font-weight-400: 400;
+    --font-weight-600: 600;
+    --font-weight-700: 700;
+
+    /* SPACING */
+    --spacing-250: 20px;
+    --spacing-400: 32px;    
+    --spacing-1600: 128px;
+}
+
+/* ===================================================
+                GLOBAL LAYOUT
+======================================================= */
+body{
+    background-color: var(--color-white);
+    color: var(--color-slate-900);
+    font-family: var(--font-family-fraunces);
+    font-size: var(--font-size-16);
+}
+
+/* ===================================================
+                CONTAINER
+======================================================= */
+
+        /* HEADER */
+.header{
+    width: 100%;
+    background-color: var(--color-slate-900);
+    padding: var(--spacing-400) var(--spacing-250) 0 var(--spacing-250);
+}
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.workit-logo{
+    width: 95.76px;
+    height: 24.61px;
+}
+.apply-button{
+    font-size: var(--foont-size-18);
+    font-weight: var(--font-weight-700);
+    font-family: var(--font-family-manrope);
+    line-height: 1.8;
+    color: var(--color-white);
+    text-decoration: none;
+    border-bottom: 3px solid var(--color-green);
 }
